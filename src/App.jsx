@@ -1,6 +1,6 @@
 import { words } from "./constants/index";
 import Button from "./components/Button";
-
+import HeroExperience from "./components/hero_models/HeroExperience";
 const App = () => {
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -9,6 +9,9 @@ const App = () => {
       </div>
 
       <div className="hero-layout">
+
+        {/* Header Left */}
+
         <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
           <div className="flex flex-col gap-7">
             <div className="hero-text">
@@ -32,11 +35,21 @@ const App = () => {
             </div>
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
               I'm a software engineer specializing in building exceptional digital experiences.
+              <br />
               Currently, I'm focused on building accessible, human-centered products.
             </p>
             <Button className="md:w-80 md:h-16 w-60 h-12" id="button" text="See My Work" />
           </div>
         </header>
+
+        {/* Header Right */}
+        
+        <figure>
+          <div className="hero-3d-layout ">
+            <HeroExperience />
+          </div>
+        </figure>
+
       </div>
     </section>
   );
