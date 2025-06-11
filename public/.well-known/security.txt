@@ -1,7 +1,7 @@
-Contact: mailto:security@sunly-portfolio.netlify.app
-Contact: https://sunly-portfolio.netlify.app/#contact
+Contact: mailto:security@sunlyportfolio.vercel.app
+Contact: https://sunlyportfolio.vercel.app/#contact
 Expires: 2026-01-01T00:00:00.000Z
 Encryption: https://keys.openpgp.org/search?q=sunly
 Preferred-Languages: en
-Canonical: https://sunly-portfolio.netlify.app/.well-known/security.txt
-Policy: https://sunly-portfolio.netlify.app/security-policy
+Canonical: https://sunlyportfolio.vercel.app/.well-known/security.txt
+Policy: https://sunlyportfolio.vercel.app/security-policy

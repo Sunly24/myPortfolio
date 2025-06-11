@@ -3,6 +3,9 @@ Allow: /
 Allow: /images/
 Allow: /models/
 Allow: /icons/
+Allow: /favicon*.png
+Allow: /favicon.ico
+Allow: /manifest.json
 Allow: /*.js
 Allow: /*.css
 Allow: /*.wasm

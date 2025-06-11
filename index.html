@@ -2,7 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/logo.png" />
+    
+    <!-- Favicons and Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-96x96.png" />
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="pdJWIcaa74WyitzJFzSnwfr8iGYWQuDOgrrF5o6biLo" />
     
@@ -130,6 +149,19 @@
         "addressLocality": "Phnom Penh",
         "addressCountry": "Cambodia"
       },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sunlyportfolio.vercel.app/favicon-512x512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "CSL - Full Stack Developer Logo"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sunlyportfolio.vercel.app/favicon-192x192.png",
+        "width": 192,
+        "height": 192
+      },
       "worksFor": {
         "@type": "Organization",
         "name": "Freelance"
@@ -179,6 +211,57 @@
             "text": "Sunly works on various projects including web applications, e-commerce platforms, mobile apps with Flutter, and full stack solutions using modern technologies."
           }
         }
+      ]
+    }
+    </script>
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://sunlyportfolio.vercel.app/#organization",
+      "name": "Sunly Portfolio",
+      "alternateName": "Sunly Dev",
+      "url": "https://sunlyportfolio.vercel.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sunlyportfolio.vercel.app/favicon-512x512.png",
+        "width": 512,
+        "height": 512,
+        "caption": "CSL Portfolio Logo"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://sunlyportfolio.vercel.app/favicon-192x192.png",
+          "width": 192,
+          "height": 192
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://sunlyportfolio.vercel.app/favicon-512x512.png",
+          "width": 512,
+          "height": 512
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Sunly",
+        "@id": "https://sunlyportfolio.vercel.app/#person"
+      },
+      "description": "Personal portfolio showcasing full stack development projects and software engineering expertise",
+      "knowsAbout": [
+        "Web Development",
+        "React Development", 
+        "Python Programming",
+        "Flutter Development",
+        "Full Stack Development"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/sunly-chao-12a10226b/",
+        "https://github.com/Sunly24",
+        "https://x.com/smxxthly"
       ]
     }
     </script>
