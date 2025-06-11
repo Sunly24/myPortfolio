@@ -11,10 +11,6 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
 ];
 
 const words = [
@@ -92,7 +88,7 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/images/logos/react.svg",
   },
   {
     name: "Python Developer",
@@ -100,11 +96,11 @@ const techStackImgs = [
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/laravel.svg",
   },
   {
     name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
+    imgPath: "/images/logos/flutter.svg",
   },
   {
     name: "Project Manager",

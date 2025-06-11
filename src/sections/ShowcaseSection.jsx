@@ -12,7 +12,11 @@ const ShowcaseSection = () => {
   const project3Ref = useRef(null);
 
   useGSAP(() => {
-  const projects = [project1Ref.current, project2Ref.current, project3Ref.current];
+    const projects = [
+      project1Ref.current,
+      project2Ref.current,
+      project3Ref.current,
+    ];
 
     projects.forEach((card, index) => {
       gsap.fromTo(
@@ -32,17 +36,19 @@ const ShowcaseSection = () => {
           },
           ease: "power2.inOut",
         }
-      )
+      );
     });
 
-    gsap.fromTo(sectionRef.current, 
-    {
-      opacity: 0,
-    },
-    {
-      opacity: 1,
-      duration: 1.5,
-    });
+    gsap.fromTo(
+      sectionRef.current,
+      {
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        duration: 1.5,
+      }
+    );
   }, []);
 
   return (
@@ -51,15 +57,22 @@ const ShowcaseSection = () => {
         <div className="showcaselayout">
           {/* Left */}
           <div className="first-project-wrapper" ref={project1Ref}>
-            <div className='image-wrapper'>
-              <img src="./images/project1.png" alt="Ryde" />
+            <div className="image-wrapper">
+              <img
+                src="./images/project1.png"
+                alt="Ryde - On-demand ride sharing app interface showing user-friendly design and booking features"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
             <div className="text-content">
               <h2>
-                On-Demmad Ride Made Simple with a Powerful, User-Friendly App call Ryde
+                Discover new destinations by offering personalized
+                recommendations. Powered by an AI chatbot assistant.
               </h2>
               <p className="text-white-50 md:text-xl">
-                Ryde is a cutting-edge on-demand ride-sharing app that revolutionizes the way people travel.
+                DERTAM APP is a mobile tourism platform that simplifies travel
+                planning and exploration.
               </p>
             </div>
           </div>
@@ -68,27 +81,32 @@ const ShowcaseSection = () => {
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
               <div className="image-wrapper bg-[#ffefdb]">
-                <img src="./images/project2.png" alt="Library Management Platform" />
+                <img
+                  src="./images/project2.png"
+                  alt="Library Management Platform - Digital library system interface with book catalog and user management features"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <h2>
-                Library Management Platform
-              </h2>
+              <h2>Library Management Platform</h2>
             </div>
 
             <div className="project" ref={project3Ref}>
               <div className="image-wrapper bg-[#ffe7eb]">
-                <img src="./images/project3.png" alt="YC Directory" />
+                <img
+                  src="./images/project3.png"
+                  alt="YC Directory - Startup showcase application displaying Y Combinator startups with filtering and search capabilities"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
-              <h2>
-                YC Directory - A Startup Showcase App
-              </h2>
+              <h2>YC Directory - A Startup Showcase App</h2>
             </div>
           </div>
-
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ShowcaseSection
+export default ShowcaseSection;

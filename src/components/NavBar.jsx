@@ -1,35 +1,34 @@
-import React from 'react'
-import { navLinks } from '../constants/index'
-import { useState, useEffect } from 'react'
+import React from "react";
+import { navLinks } from "../constants/index";
+import { useState, useEffect } from "react";
 
 const NavBar = () => {
+  const [scrolled, setScrolled] = useState(false);
 
-  const [scrolled, setScrolled] = useState(false)
-  
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled)
-    }
+      setScrolled(isScrolled);
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className={`navbar ${scrolled ? 'scrolled' : 'no-scrolled'}`}>
+    <header className={`navbar ${scrolled ? "scrolled" : "no-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-          Sunly The Best
+          <img src={"images/logo-bg.png"} alt="logo" height={100} width={100} />
         </a>
         <nav className="desktop">
           <ul>
-            {navLinks.map(({link, name}) => (
+            {navLinks.map(({ link, name }) => (
               <li key={name} className="group">
                 <a href={link}>
                   <span>{name}</span>
-                  <span className="underline"/>
+                  <span className="underline" />
                 </a>
               </li>
             ))}
@@ -42,7 +41,7 @@ const NavBar = () => {
         </a>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

@@ -7,18 +7,23 @@ import Experience from "./sections/Experience";
 import TechStack from "./sections/TechStack";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import SEOHead from "./components/SEOHead";
+
 const App = () => (
-    <>
+  <>
+    <SEOHead />
     <NavBar />
-    <Hero />
-    <ShowcaseSection />
-    <LogoShowcase />
-    <FeatureCards />
-    <Experience />
-    <TechStack />
-    <Contact />
+    <main>
+      <Hero />
+      <ShowcaseSection />
+      <LogoShowcase />
+      <FeatureCards />
+      <Experience />
+      <TechStack />
+      <Contact />
+    </main>
     <Footer />
-    </>
-  );
+  </>
+);
 
 export default App;
