@@ -1,5 +1,23 @@
 User-agent: *
 Allow: /
+Allow: /images/
+Allow: /models/
+Allow: /icons/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.wasm
+Allow: /*.glb
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.mp4
+
+# Allow external resources for 3D models
+User-agent: Googlebot
+Allow: /
+Disallow: 
 
 # Sitemap
 Sitemap: https://sunlyportfolio.vercel.app/sitemap.xml
