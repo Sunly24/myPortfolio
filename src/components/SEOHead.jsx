@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const SEOHead = ({
   title = "Sunly - Portfolio",
-  description = "Experienced in React, Flutter, Python, and Laravel. Creating exceptional digital experiences.",
+  description = "Computer Science student and Full Stack Developer specializing in React, Python, Laravel, and Flutter. Building scalable web applications and modern digital solutions.",
   keywords = "Software Engineer, React developer, Flutter developer, Python, Laravel, web development, and AI Engineer",
   canonicalUrl = "https://sunly-portfolio.netlify.app/",
   ogImage = "https://sunly-portfolio.netlify.app/images/og-image.png",

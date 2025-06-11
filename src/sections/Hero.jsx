@@ -68,9 +68,9 @@ const Hero = () => {
               <br />
               Currently, I'm focused on building{" "}
               <em>
-                accessible, human-centered products,
+                scalable web applications and modern digital solutions
                 <br />
-                creation and innovative web applications.
+                that deliver exceptional user experiences.
               </em>
             </p>
             <Button
