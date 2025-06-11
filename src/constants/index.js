@@ -242,20 +242,24 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
     name: "fb",
     imgPath: "/images/fb.png",
+    url: "https://web.facebook.com/chao.sunly/",
   },
   {
     name: "x",
     imgPath: "/images/x.png",
+    url: "https://x.com/smxxthly",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/sunly-chao-12a10226b/",
+  },
+  {
+    name: "github",
+    imgPath: "/images/github.svg",
+    url: "https://github.com/Sunly24",
   },
 ];
 

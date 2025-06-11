@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
-    <title>Sunly - Full Stack Developer & Software Engineer Portfolio</title>
-    <meta name="title" content="Sunly - Full Stack Developer & Software Engineer Portfolio" />
-    <meta name="description" content="Experienced Full Stack Developer specializing in React, Node.js, Python, and Three.js. Creating exceptional digital experiences with 15+ years of expertise. Available for freelance projects." />
-    <meta name="keywords" content="full stack developer, software engineer, React developer, Node.js, Python, Three.js, web development, frontend developer, backend developer, freelance developer, portfolio" />
+    <title>Sunly &mdash;&mdash; Portfolio</title>
+    <meta name="title" content="Sunly - Portfolio" />
+    <meta name="description" content="Experienced in React, Python, Laravel, and Flutter. Creating exceptional digital experiences." />
+    <meta name="keywords" content=" software engineer, React developer, Python, web development, frontend developer, backend developer, freelance developer, portfolio" />
     <meta name="author" content="Sunly" />
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+    <meta name="geo.region" content="Asia" />
+    <meta name="geo.placename" content="Cambodia" />
+    <meta name="geo.position" content="39.8283;-98.5795" />
+    <meta name="ICBM" content="39.8283, -98.5795" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sunly-portfolio.netlify.app/" />
-    <meta property="og:title" content="Sunly - Full Stack Developer & Software Engineer Portfolio" />
+    <meta property="og:title" content="Sunly - Portfolio" />
     <meta property="og:description" content="Experienced Full Stack Developer specializing in React, Node.js, Python, and Three.js. Creating exceptional digital experiences with 15+ years of expertise." />
     <meta property="og:image" content="https://sunly-portfolio.netlify.app/images/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Sunly - Full Stack Developer Portfolio" />
+    <meta property="og:image:alt" content="Sunly - Portfolio" />
     <meta property="og:site_name" content="Sunly Portfolio" />
     <meta property="og:locale" content="en_US" />
     
@@ -44,12 +50,14 @@
     <meta name="apple-mobile-web-app-title" content="Sunly Portfolio" />
     
     <!-- Apple Touch Icons -->
-    <link rel="apple-touch-icon" href="/icons/pwa-192x192.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="/icons/pwa-192x192.png" />
-    <link rel="apple-touch-icon" sizes="512x512" href="/icons/pwa-512x512.png" />
+    <link rel="apple-touch-icon" href="/images/logo.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/logo.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/logo.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/images/logo.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/imamages/logo.png" />
     
     <!-- Mask Icon for Safari -->
-    <link rel="mask-icon" href="/icons/pwa-192x192.png" color="#000000" />
+    <link rel="mask-icon" href="/images/logo.png" color="#000000" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sunly-portfolio.netlify.app/" />
@@ -57,6 +65,13 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    
+    <!-- Resource hints for better performance -->
+    <link rel="preload" href="/images/logo.png" as="image" type="image/png" />
+    <link rel="preload" href="/images/bg.png" as="image" type="image/png" />
     
     <!-- Structured Data - JSON-LD -->
     <script type="application/ld+json">
@@ -65,22 +80,20 @@
       "@type": "Person",
       "name": "Sunly",
       "jobTitle": "Full Stack Developer & Software Engineer",
-      "description": "Experienced Full Stack Developer specializing in React, Node.js, Python, and Three.js with 15+ years of expertise",
+      "description": "Experienced Full Stack Developer specializing in React, Python, Laravel and Flutter. Creating exceptional digital experiences",
       "url": "https://sunly-portfolio.netlify.app/",
       "image": "https://sunly-portfolio.netlify.app/images/person.png",
       "sameAs": [
-        "https://linkedin.com/in/sunly",
-        "https://github.com/sunly",
-        "https://twitter.com/sunly_dev"
+        "https://www.linkedin.com/in/sunly-chao-12a10226b/",
+        "https://github.com/Sunly24",
+        "https://x.com/smxxthly"
       ],
       "knowsAbout": [
         "React",
-        "Node.js", 
+        "Laravel", 
         "Python",
-        "Three.js",
+        "Flutter",
         "JavaScript",
-        "TypeScript",
-        "Full Stack Development",
         "Frontend Development",
         "Backend Development",
         "Web Development",
@@ -115,6 +128,32 @@
         "target": "https://sunly-portfolio.netlify.app/?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What technologies does Sunly specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sunly specializes in React, Python, Flutter, JavaScript, TypeScript, full stack development, frontend development, backend development, and modern web technologies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of projects does Sunly work on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sunly works on various projects including web applications, e-commerce platforms, mobile apps with Flutter, and full stack solutions using modern technologies."
+          }
+        },
+      ]
     }
     </script>
   </head>
